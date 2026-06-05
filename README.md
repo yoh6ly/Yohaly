@@ -1,4 +1,4 @@
-# Hello, I’m Yohaly 👋
+# Hello, I’m Yohaly 
 
 <img src="https://img.icons8.com/color/96/electronics.png" alt="Electronics Icon" width="80"/>  
 <img src="https://img.icons8.com/color/96/artificial-intelligence.png" alt="AI Icon" width="80"/>  
@@ -26,13 +26,13 @@ Bridging circuits and data to optimize processes and develop more efficient syst
 
 ---
 
-### 📂 Featured Projects 
+###  Featured Projects 
 -  **Embedded Systems Lab** – Experiments with microcontrollers and sensors 
 -  **AI Optimization Demo** – Applying machine learning to improve efficiency
 -  **Circuit Simulation Toolkit** – Tools for electronic design and testing
 
 --- 
 
-### 📊 GitHub Stats 
+###  GitHub Stats 
 ![Yohaly's GitHub stats](https://github-readme-stats.vercel.app/api?username=yoh6ly&show_icons=true&theme=radical) 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yoh6ly&layout=compact&theme=radical)
