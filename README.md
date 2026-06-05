@@ -9,7 +9,7 @@ Bridging circuits and data to optimize processes and develop more efficient syst
 
 ---
 
-### 🚀 Skills & Tools
+###  Skills & Tools
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![KiCad](https://img.shields.io/badge/KiCad-314CB0?style=for-the-badge&logo=kicad&logoColor=white)
@@ -20,16 +20,16 @@ Bridging circuits and data to optimize processes and develop more efficient syst
 
 ---
 
-### 🌐 Connect with me
+###  Connect with me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yohaly-d-2005ba308)  
-📫 **Contact:** yohaly982@gmail.com
+ **Contact:** yohaly982@gmail.com
 
 ---
 
 ### 📂 Featured Projects 
-- 🔌 **Embedded Systems Lab** – Experiments with microcontrollers and sensors 
-- 🤖 **AI Optimization Demo** – Applying machine learning to improve efficiency
-- ⚡ **Circuit Simulation Toolkit** – Tools for electronic design and testing
+-  **Embedded Systems Lab** – Experiments with microcontrollers and sensors 
+-  **AI Optimization Demo** – Applying machine learning to improve efficiency
+-  **Circuit Simulation Toolkit** – Tools for electronic design and testing
 
 --- 
 
