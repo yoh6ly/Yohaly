@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en" class="notranslate" translate="no">
+  <head>
+    <script>self["MonacoEnvironment"] = (function (paths) {
+          return {
+            globalAPI: false,
+            getWorkerUrl : function (moduleId, label) {
+              var result =  paths[label];
+              if (/^((http:)|(https:)|(file:)|(\/\/))/.test(result)) {
+                var currentUrl = String(window.location);
+                var currentOrigin = currentUrl.substr(0, currentUrl.length - window.location.hash.length - window.location.search.length - window.location.pathname.length);
+                if (result.substring(0, currentOrigin.length) !== currentOrigin) {
+                  var js = '/*' + label + '*/importScripts("' + result + '");';
+                  var blob = new Blob([js], { type: 'application/javascript' });
+                  return URL.createObjectURL(blob);
+                }
+              }
+              return result;
+            }
+          };
+        })({
+  "editorWorkerService": "/monacoeditorwork/editor.worker.bundle.js",
+  "css": "/monacoeditorwork/css.worker.bundle.js",
+  "html": "/monacoeditorwork/html.worker.bundle.js",
+  "json": "/monacoeditorwork/json.worker.bundle.js",
+  "typescript": "/monacoeditorwork/ts.worker.bundle.js",
+  "yaml": "/monacoeditorwork/yaml.worker.bundle.js",
+  "javascript": "/monacoeditorwork/ts.worker.bundle.js",
+  "less": "/monacoeditorwork/css.worker.bundle.js",
+  "scss": "/monacoeditorwork/css.worker.bundle.js",
+  "handlebars": "/monacoeditorwork/html.worker.bundle.js",
+  "razor": "/monacoeditorwork/html.worker.bundle.js"
+});</script>
+
+    <meta charset="utf-8" />
+    <meta
+      name="Description"
+      content="Azure Machine Learning Studio is a GUI-based integrated development environment for constructing and operationalizing Machine Learning workflow on Azure."
+    />
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <title>Azure AI | Machine Learning Studio</title>
+
+    <style data-make-styles-bucket="m"></style>
+    <style data-merge-styles="true"></style>
+    <script type="module" crossorigin src="/assets/index-36242786.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_vite-9909b138.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_babel-runtime-helpers-cd5ead7a.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_react-f48f2b16.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_vendor-misc-00520b9c.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_react-dom-db4a82c3.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_data-fetch-4f31cbe7.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_msal-471f219f.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_lodash-es-eaee15f0.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_fluentui-v8-fe0918f9.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_react-router-a26108a5.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_telemetry-65304394.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_common_core-caa7b724.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_common_api-43c76b1d.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_common_components-b5fe65e0.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_fluentui-v9-set1-264a9a4b.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_fluentui-v9-set2-c043c9a1.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_common_metastore-d8c79eed.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_common_workspace-9f892091.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_common_openai-a2986f0a.js">
+    <link rel="modulepreload" crossorigin href="/assets/manualChunk_common_model_playground-cd557c89.js">
+    <link rel="stylesheet" href="/assets/style-56dd4644.css">
+  </head>
+
+  <body id="mlworkspace">
+    <div id="root"></div>
+
+    
+    <script>
+      window.require = () => {
+        return { name: "@ms/centro-hvc-loader", version: "3.6.0" };
+      };
+    </script>
+    <script>
+      window.App_Region = "eastus";
+      window.Cloud_Api_Host = "eastus.api.azureml.ms";
+      window.App_InstrumentationKey = "##APPINSIGHTS_INSTRUMENTATIONKEY##";
+      window.Classification_Level = "##CLASSIFICATION_LEVEL##";
+    </script>
+
+    <script>
+      // Best-effort attempt to pre-load our React Query cache from IndexedDb
+      try {
+        const startTime = performance.now();
+        const request = indexedDB.open("keyval-store");
+        // The `storeName` variable is not declared. As this code never worked it is commented out to avoid errors in console.
+        // request.onupgradeneeded = () => request.result.createObjectStore(storeName);
+        request.onsuccess = dbEvent => {
+          dbEvent.target.result
+            .transaction("keyval", "readonly")
+            .objectStore("keyval")
+            .get("REACT_QUERY_OFFLINE_CACHE").onsuccess = opEvent => {
+            try {
+              window.InitialReactQueryCacheData = JSON.parse(opEvent.target.result || "{}");
+              console.log(`React query cache restored in ${performance.now() - startTime} ms`);
+            } catch {}
+          };
+        };
+      } catch {}
+    </script>
+
+    
+  </body>
+</html>
